@@ -1,0 +1,14 @@
+:root {
+    /* HEADER */
+    --header-bg: blue;
+    --header-font-color: white;
+    --header-hover: darkblue;
+    --header-active: lightblue;
+    /* CONTENT */
+    --content-section-bg: white;   
+    --content-img-border: 1px solid black;
+    --content-link-color: blue;
+    /* FOOTER */
+    --footer-bg: blue;
+    --footer-font-color: white; 
+}

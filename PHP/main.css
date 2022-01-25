@@ -1,0 +1,214 @@
+
+/* BASIC ELEMENTS CSS */
+
+/* Possible to add a custom font with font-face */
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+    /* Default font color on website */
+    color: black;
+    background: white;
+    letter-spacing: 1px;
+    margin: 0;
+    overflow: auto;
+}
+img {
+    height: 100%;
+    width: fit-content;
+}
+h1, h2 {
+    font-weight: bold;
+}
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+h2 {
+    font-size: 24px;
+}
+p {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.4;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* HEADER CSS */
+
+.container {
+    background-color: var(--header-bg);
+    color: var(--header-font-color);
+    padding: 10px 0px 10px 0px;
+    height: 50px;
+    z-index: 10;
+}
+.container #myLinks {
+    display: block;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+header, nav {
+    margin: 0;
+    padding: 0;
+    float: left;
+    background-color: var(--header-bg);
+    font-size: 16px;
+    height: 100%;
+}
+header {
+    text-align: left;
+}
+nav {
+    text-align: right;
+    float: right;
+    font-weight: bold;
+}
+nav a {
+    display: inline-block;
+    padding: 15px 20px 0px 20px;
+    height: 35px;
+    text-decoration: none;
+    color: var(--header-font-color);
+    vertical-align: middle;
+}
+nav a:hover {
+    background-color: var(--header-hover);
+}
+nav .active, nav .active:hover {
+    background-color: var(--header-active);
+}
+#hamburger {
+    display: none;
+    width: fit-content;
+    margin-right: 10px;
+    float: right;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* CONTENT CSS */
+
+section {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1850px;
+    background-color: var(--content-section-bg);
+}
+section img {
+    width: 100%;
+    border: var(--content-img-border);
+}
+section a {
+    color: var(--content-link-color);
+    text-decoration: none;
+}
+section a:hover {
+    text-decoration: underline;
+}
+article {
+    padding: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* FOOTER CSS */
+
+footer {
+    background-color: var(--footer-bg);
+    color: var(--footer-font-color);
+    padding-bottom: 5px;
+}
+footer:after, footer aside:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+footer aside {
+    margin-right: auto;
+    margin-left: 60%;
+}
+footer img {
+    width: 200px;
+}
+#rest {
+    float: left;
+    margin-left: 15%;
+}
+footer h1 {
+    padding-top: 10px;
+}
+footer h2, footer p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+footer h2 {
+    font-size: 20px;
+    padding-top: 20px;
+}
+footer p {
+    padding-left: 10px;
+}
+footer #creator {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1300px) {
+
+}
+@media (max-width: 900px) {
+    .container {
+        height: fit-content;
+    }
+    .container #myLinks {
+        display: none;
+        margin-top: 60px;
+    }
+    .container #myLinks, .container #myLinks a {
+        width: 100%;
+    }
+    #hamburger, .container a.icon {
+        display: block;
+    }
+    #hamburger {
+        display: block;
+        height: 40px;
+        width: 40px;
+        margin-top: 5px;
+    }
+    #hamburger img {
+        width: 100%;
+        height: 100%;
+    }
+    nav {
+        text-align: center;
+        width: 100%;
+        position: fixed;
+        z-index: -1;
+    }
+    nav a {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+@media (max-width: 750px) {
+    #rest, #rest h2, #rest p {
+        float: none;
+        text-align: center;
+        margin-left: 0;
+    }
+    footer aside {
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+    }
+}
