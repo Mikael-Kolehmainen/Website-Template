@@ -1,6 +1,6 @@
 <?php
     echo '
-    <div class="container" id="top">
+    <div class="container sticky" id="top">
         <header>
             <img src="media/logo.png" alt="Company logo">
         </header>

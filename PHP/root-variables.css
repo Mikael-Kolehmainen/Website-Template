@@ -10,5 +10,7 @@
     --content-link-color: blue;
     /* FOOTER */
     --footer-bg: blue;
-    --footer-font-color: white; 
+    --footer-font-color: white;
+    /* FORM */
+    --form-box-bg: thistle;
 }
