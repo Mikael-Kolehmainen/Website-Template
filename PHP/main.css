@@ -42,7 +42,6 @@ p {
     color: var(--header-font-color);
     padding: 10px 0px 10px 0px;
     height: 50px;
-    z-index: 10;
 }
 .container #myLinks {
     display: block;
@@ -56,10 +55,10 @@ header, nav {
     float: left;
     background-color: var(--header-bg);
     font-size: 16px;
-    height: 100%;
 }
 header {
     text-align: left;
+    height: 100%;
 }
 nav {
     text-align: right;
@@ -166,9 +165,6 @@ footer #creator {
 
 }
 @media (max-width: 900px) {
-    .container {
-        height: fit-content;
-    }
     .container #myLinks {
         display: none;
         margin-top: 60px;
@@ -193,7 +189,6 @@ footer #creator {
         text-align: center;
         width: 100%;
         position: fixed;
-        z-index: -1;
     }
     nav a {
         padding-left: 0;
