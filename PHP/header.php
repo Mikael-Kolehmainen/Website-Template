@@ -14,6 +14,7 @@
                 <!-- You can add as many sites as you want -->
                 <a href="index.php" class="active">Home</a>
                 <a href="login.php">Sign Up / Sign In</a>
+                <a href="example.php">Esimerkki</a>
             </div>
         </nav>
     </div>
