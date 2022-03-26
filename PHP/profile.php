@@ -2,7 +2,7 @@
 
     if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["new-user"])) {
         require "connection.php";
-        $sql = "SELECT email, username, userpassword FROM users";
+        $sql = "SELECT username, email, userpassword FROM users";
         $result = mysqli_query($conn, $sql);
         $username = $_REQUEST["username"];
         $email = $_REQUEST["email"];
@@ -45,7 +45,7 @@
                 setcookie('alreadyLoggedInCookie', $username, time() + (60 * 30), "/");
             }
 
-            $sql = "INSERT INTO users (email, username, userpassword)
+            $sql = "INSERT INTO users (username, email, userpassword)
                     VALUES ('$username', '$email', '$pw')";
 
             mysqli_query($conn, $sql);
